@@ -29,6 +29,7 @@ public class CustomLog4JAppender extends RollingFileAppender {
         super(layout, filename);
     }
 
+    @Override
     public void activateOptions() {
         if (fileName != null) {
             try {
@@ -49,7 +50,7 @@ public class CustomLog4JAppender extends RollingFileAppender {
             final String hyphen = "-";
             final File currentLogFile = new File(fileName);
             final String currentLogFileName = currentLogFile.getName();
-            String newLogFileName = currentLogFileName;
+            String newLogFileName ;
 
             final int dotIndex = currentLogFileName.indexOf(DOT);
             String projectName = "TelecomBillingSystem";

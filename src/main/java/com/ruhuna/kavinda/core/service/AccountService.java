@@ -43,8 +43,7 @@ public class AccountService {
     private int getTransactionNoByAccount(int simNo, Account account, String accountType) {
         BigDecimal allAmount = getTotalAmount(account.getAmount());
         if (account.getCreditLimit().compareTo(allAmount.add(account.getSmsService().getSmsPrice())) > 0) {
-            int transactionNo = getTransactionNoWhenSimNoIsExist(simNo, account.getAccountId(), accountType);
-            return transactionNo;
+            return getTransactionNoWhenSimNoIsExist(simNo, account.getAccountId(), accountType);
         }
         Logger.logInfoMessage(this, simNo + " number Credit limit is exceeded.");
         return 0;

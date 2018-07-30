@@ -10,6 +10,10 @@ import java.util.regex.Pattern;
  * Date  : 7/28/2018
  */
 public class Assert {
+
+    private Assert() {
+    }
+
     public static void isGreaterThenZero(int value) {
         if (value <= 0) {
             throw new IllegalArgumentException("This Integer Value can not be less then zero.");

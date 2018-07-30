@@ -8,6 +8,9 @@ import org.slf4j.LoggerFactory;
  * Date  : 7/30/2018
  */
 public class Logger {
+    private Logger() {
+    }
+
     public static void logInfoMessage(Object source, String s) {
         LoggerFactory.getLogger(toClass(source)).info(s);
     }

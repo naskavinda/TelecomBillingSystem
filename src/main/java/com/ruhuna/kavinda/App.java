@@ -9,7 +9,6 @@ import com.ruhuna.kavinda.database.inmemory.feeddata.FeedData;
  */
 public class App {
     public static void main(String[] args) {
-//        System.setProperty("log4j.debug", "");
         new FeedData().init();
 
         TelecomBillingController telecomBillingController = new TelecomBillingController();
