@@ -56,7 +56,7 @@ public class TransactionDetails {
         private TransactionStatus transactionStatus;
         private Long dateTime;
 
-        public Builder() {
+        private Builder() {
         }
 
         public TransactionDetails build() {

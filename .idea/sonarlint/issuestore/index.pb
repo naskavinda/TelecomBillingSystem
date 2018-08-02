@@ -63,3 +63,13 @@ n
 >src/main/java/com/ruhuna/kavinda/TelecomBillingController.java,5\e\5e27e226a04d82c2dad1d091db29d3d5df697d68
 r
 Bsrc/test/java/com/ruhuna/kavinda/TelecomBillingControllerTest.java,8\5\85e423b0919d310405300ef7f7f06b5444d8d982
+N
+.idea/dictionaries/Kavinda.xml,7\a\7ae9c4b8a76b0e64883cdde248d4900bc845679f
+B
+TelecomBilling.iml,c\1\c172469b54850875b9cd3150ed66e89c85f4185b
+w
+G.idea/sonarlint/issuestore/2/5/254037d6841ccf82e46e8ca16b3473b29051ba0b,6\c\6cffcd397fcce936444ddc493f7ccc993eae0fc2
+]
+-src/test/java/com/ruhuna/kavinda/AppTest.java,3\a\3a30546a66027d2f4cd59773de243fc2818effd7
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

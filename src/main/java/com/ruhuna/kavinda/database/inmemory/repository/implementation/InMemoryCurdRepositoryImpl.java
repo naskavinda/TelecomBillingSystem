@@ -70,7 +70,7 @@ public class InMemoryCurdRepositoryImpl extends RandomGenerator implements InMem
 
     @Override
     public void saveTransaction(int simNo, int accountId, int transactionId, long localDateTime) {
-        TransactionDetails transactionDetails = new TransactionDetails.Builder()
+        TransactionDetails transactionDetails = TransactionDetails.newTransactionDetails()
                 .accountId(accountId)
                 .simNo(simNo)
                 .transactionStatus(TransactionStatus.PENDING)
@@ -111,7 +111,7 @@ public class InMemoryCurdRepositoryImpl extends RandomGenerator implements InMem
             throw new TransactionNoIncorrectException(transactionId + " this transaction no is incorrect.");
         }
         TransactionDetails transactionDetails = transactionDetailsMap.get(transactionId);
-        TransactionDetails transactionDetails1 = new TransactionDetails.Builder()
+        TransactionDetails transactionDetails1 = TransactionDetails.newTransactionDetails()
                 .accountId(transactionDetails.getAccountId())
                 .simNo(transactionDetails.getSimNo())
                 .transactionStatus(transactionStatus)
